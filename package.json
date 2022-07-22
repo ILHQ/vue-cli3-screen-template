@@ -8,15 +8,14 @@
     "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
     "prettier": "prettier --write .",
     "prepare": "husky install",
-    "build-production": "vue-cli-service build --mode production",
-    "build-test": "vue-cli-service build --mode test"
+    "build:dev": "vite build --mode development",
+    "build:pro": "vue-cli-service build --mode production",
+    "build:staging": "vue-cli-service build --mode staging"
   },
   "dependencies": {
     "axios": "^0.26.0",
     "better-scroll": "^2.4.2",
-    "postcss-plugin-px2rem": "^0.8.1",
     "vue": "^2.6.11",
-    "vue-navigation": "^1.1.4",
     "vue-router": "^3.2.0",
     "vue-xss": "^1.0.4",
     "vuex": "^3.4.0"
@@ -29,18 +28,19 @@
     "@vue/cli-plugin-unit-jest": "^4.5.0",
     "@vue/cli-service": "^4.5.0",
     "@vue/test-utils": "^1.0.3",
-    "autoprefixer": "^10.4.7",
+    "amfe-flexible": "^2.2.1",
     "babel-plugin-import": "^1.13.3",
     "compression-webpack-plugin": "^5.0.1",
-    "dart-sass": "^1.25.0",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.2.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "postcss-pxtorem": "^5.1.1",
     "prettier": "^2.7.1",
-    "sass": "1.32.13",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11",
     "webpack-bundle-analyzer": "^4.5.0"
   }

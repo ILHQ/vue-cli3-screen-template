@@ -1,8 +1,8 @@
+import { SET_SCALE } from '../mutation-types';
+
 // init state
 const state = {
-  userInfo: {},
-  unitInfo: {},
-  selectArea: {},
+  scale: 1, // 比例
 };
 
 // getters
@@ -12,7 +12,11 @@ const getters = {};
 const actions = {};
 
 // mutations
-const mutations = {};
+const mutations = {
+  [SET_SCALE](state, val) {
+    state.scale = val;
+  },
+};
 
 export default {
   namespaced: true,
