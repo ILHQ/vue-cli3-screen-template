@@ -1,0 +1,35 @@
+$white: #fff;
+$blue: #1677ff;
+$red: #fe3824;
+$bigRed: #fe3824;
+$green: #67c23a;
+$orange: #ff9100;
+$purple: #a542fe;
+$black: #000000;
+$gray: #9094a3;
+$disabled: #bbbfc7;
+$border: #f1f2f3;
+$fontColor: #333333;
+$fontLightGray: #c0c4cc;
+$fontGray: #9094a3;
+$fontDeepGray: #606266;
+$fontRed: #fd6149;
+$tagGray: #d3d4d6;
+$tagBlue: #e6f1fd;
+$tagRed: #ffe8e2;
+$tagGreen: #e2ffd3;
+$tagOrange: #fff6cf;
+$bgColor: #f1f2f3;
+$bgBlue: #dbeaff;
+
+/*导出*/
+:export {
+  white: $white;
+  blue: $blue;
+  red: $red;
+  green: $green;
+  purple: $purple;
+  orange: $orange;
+  gray: $gray;
+  bgColor: $bgColor;
+}
