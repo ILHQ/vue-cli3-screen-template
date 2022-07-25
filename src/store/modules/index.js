@@ -1,5 +1,3 @@
-import { SET_SCALE } from '../mutation-types';
-
 // init state
 const state = {
   scale: 1, // 比例
@@ -13,7 +11,7 @@ const actions = {};
 
 // mutations
 const mutations = {
-  [SET_SCALE](state, val) {
+  SET_SCALE(state, val) {
     state.scale = val;
   },
 };

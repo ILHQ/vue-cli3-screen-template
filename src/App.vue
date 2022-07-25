@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     ...mapMutations({
-      setScale: 'SET_SCALE',
+      setScale: 'index/SET_SCALE',
     }),
     resize() {
       // 当前页面宽度相对于 1920宽和1080高的缩放比例，可根据自己需要修改。
