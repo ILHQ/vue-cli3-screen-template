@@ -56,6 +56,12 @@ select {
   outline: none;
 }
 
+div,
+ul,
+p {
+  box-sizing: border-box;
+}
+
 input[type='password']:focus {
   box-shadow: 0 0 0 1000px $white inset;
 }
@@ -148,6 +154,10 @@ body,
 
 .colorDefault {
   color: $fontColor;
+}
+
+.colorWhite {
+  color: $white;
 }
 
 .colorRed {
@@ -268,58 +278,118 @@ body,
   }
 }
 
+.w-full {
+  width: 100%;
+}
+
+@for $i from 1 through 12 {
+  .w-#{$i}\/12 {
+    width: #{$i / 12 * 100}px;
+  }
+}
+
+@for $i from 1 through 800 {
+  .w-#{$i} {
+    width: #{$i}px;
+  }
+}
+
+.h-full {
+  height: 100%;
+}
+
+@for $i from 1 through 12 {
+  .h-#{$i}\/12 {
+    height: #{$i / 12 * 100}px;
+  }
+}
+
+@for $i from 1 through 800 {
+  .h-#{$i} {
+    height: #{$i}px;
+  }
+}
+
+@for $i from 0 through 180 {
+  .rotate-#{$i} {
+    transform: rotate(#{$i}deg);
+  }
+}
+
+@for $i from 1 through 180 {
+  .-rotate-#{$i} {
+    transform: rotate(-#{$i}deg);
+  }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 
-  .items-start {
+  &.items-start {
     align-items: flex-start;
   }
 
-  .items-end {
+  &.items-end {
     align-items: flex-end;
   }
 
-  .items-center {
+  &.items-center {
     align-items: center;
   }
 
-  .items-baseline {
+  &.items-baseline {
     align-items: baseline;
   }
 
-  .items-stretch {
+  &.items-stretch {
     align-items: stretch;
   }
 
-  .justify-start {
+  &.justify-start {
     justify-content: flex-start;
   }
 
-  .justify-end {
+  &.justify-end {
     justify-content: flex-end;
   }
 
-  .justify-center {
+  &.justify-center {
     justify-content: center;
   }
 
-  .justify-between {
+  &.justify-between {
     justify-content: space-between;
   }
 
-  .justify-around {
+  &.justify-around {
     justify-content: space-around;
   }
 
-  .justify-evenly {
+  &.justify-evenly {
     justify-content: space-evenly;
   }
 
-  .flex-shrink-0 {
+  &.flex-shrink-0 {
     flex-shrink: 0;
   }
 
-  .flex-shrink {
+  &.flex-shrink {
     flex-shrink: 1;
   }
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
